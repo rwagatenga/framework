@@ -28,6 +28,7 @@ class PresetCommand extends Command
      */
     public function handle()
     {
+        /*Can you correct this line 32 it has an error in laravel */
         if (static::hasMacro($this->argument('type'))) {
             return call_user_func(static::$macros[$this->argument('type')], $this);
         }
